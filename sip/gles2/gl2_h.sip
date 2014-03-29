@@ -2175,6 +2175,14 @@ void glUniform4f(GLint location, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
     sipIsErr = gles2_error_check();
 %End
 
+void glUniform4fv__buffer(GLint location, GLsizei count, const GLvoid* value);
+%MethodCode
+    {
+        glUniform4fv(location, count, value);
+        sipIsErr = gles2_error_check();
+    }
+%End
+
 void glUniform4fv(GLint location, SIP_PYLIST v /DocType="list-of-float"/);
 %MethodCode
     if (PyList_GET_SIZE(v) % 4 != 0)
