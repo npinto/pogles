@@ -1,0 +1,18 @@
+v1.0 19th April 2013
+  - The first stable release.
+
+v0.3 28th January 2013
+  - Added the full API documentation.
+  - glGetBooleanv(), glGetBufferParameteriv(), glGetFloatv(),
+    glGetFramebufferAttachmentParameteriv(), glGetIntegerv(), glGetProgramiv(),
+    glGetRenderbufferParameteriv(), glGetShaderiv(), glGetTexParameterfv(),
+    glGetTexParameteriv(), glGetUniformfv(), glGetUniformiv(),
+    glGetVertexAttribfv() and glGetVertexAttribiv() now always return tuples.
+
+v0.2 10th December 2012
+  - Any object that implements the Python buffer protocol can now be passed
+    when a block of memory (i.e. a void *) is expected.
+  - Requires SIP v4.14.2.
+
+v0.1 27th October 2012
+  - The first release.

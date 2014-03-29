@@ -1,0 +1,65 @@
+Metadata-Version: 1.0
+Name: pogles
+Version: 1.0
+Summary: Python Bindings for OpenGL ES v2.0
+Home-page: http://www.riverbankcomputing.com/software/pogles/
+Author: Riverbank Computing Limited
+Author-email: info@riverbankcomputing.com
+License: BSD
+Description: pogles - Python Bindings for OpenGL ES v2.0
+        ===========================================
+        
+        What is pogles?
+        ---------------
+        
+        pogles is a Python package that implements bindings for OpenGL ES v2.0 for
+        Python v2.3 or later and Python v3.  It comprises three modules:
+        
+        - ``pogles.gles2`` contains the bindings for Open GL ES v2.0 itself.
+        
+        - ``pogles.egl`` contains the bindings for the EGL native platform interface.
+        
+        - ``pogles.platform`` contains platform specific bindings for creating native
+          windows.  Currently the Raspberry Pi and X11 platforms are supported.
+        
+        The full ES and EGL APIs are implemented and given a Pythonic twist where
+        appropriate - for example errors raise Python exceptions.
+        
+        
+        Author
+        ------
+        
+        pogles is copyright (c) Riverbank Computing Limited.  Its homepage is
+        http://www.riverbankcomputing.com/software/pogles/.
+        
+        Support may be obtained from the PyQt mailing list at
+        http://www.riverbankcomputing.com/mailman/listinfo/pyqt
+        
+        
+        License
+        -------
+        
+        pogles is released under the BSD license.
+        
+        
+        Installation
+        ------------
+        
+        pogles is implemented using the SIP Python bindings generator which must be
+        installed first.  SIP is available for all Linux distributions but pogles
+        requires v4.14.2 or later.  The current version of SIP can be found at
+        http://www.riverbankcomputing.com/software/sip/download.
+        
+        pogles itself is installed as a normal Python package::
+        
+            python setup.py install
+        
+        
+        Documentation
+        -------------
+        
+        The documentation for the latest release can be found
+        `here <http://pyqt.sourceforge.net/Docs/pogles/>`__.
+        
+Platform: X11
+Platform: Raspberry Pi
